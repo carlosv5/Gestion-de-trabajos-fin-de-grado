@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>ISST_TFG_T4Servlet</servlet-name>
+		<servlet-class>es.upm.dit.isst.tfg.ISST_TFG_T4Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ISST_TFG_T4Servlet</servlet-name>
+		<url-pattern>/isst_tfg_t4</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CompruebaServlet</servlet-name>
+		<servlet-class>es.upm.dit.isst.tfg.CompruebaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CompruebaServlet</servlet-name>
+		<url-pattern>/nuevoTFG</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SubirMemoriaServlet</servlet-name>
+		<servlet-class>es.upm.dit.isst.tfg.SubirMemoriaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SubirMemoriaServlet</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MostrarMemoriaServlet</servlet-name>
+		<servlet-class>es.upm.dit.isst.tfg.MostrarMemoriaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MostrarMemoriaServlet</servlet-name>
+		<url-pattern>/mostrarMemoria</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AceptarSecretarioServlet</servlet-name>
+		<servlet-class>es.upm.dit.isst.tfg.AceptarSecretarioServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AceptarSecretarioServlet</servlet-name>
+		<url-pattern>/aceptarSecretario</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AceptarTutorServlet</servlet-name>
+		<servlet-class>es.upm.dit.isst.tfg.AceptarTutorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AceptarTutorServlet</servlet-name>
+		<url-pattern>/aceptarTutor</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BorrarSolicitudServlet</servlet-name>
+		<servlet-class>es.upm.dit.isst.tfg.BorrarSolicitudServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BorrarSolicitudServlet</servlet-name>
+		<url-pattern>/borrarSolicitud</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
